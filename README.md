@@ -1,9 +1,13 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run this project , clone it then Run on the root directory the following command
 
-Currently, two official plugins are available:
+```
+npm install
+npm run dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# react-cv" 
+# Description
+
+This is a practice project for the Odin project.
+It's objective is to create a simple CV editor in the browser to practice handling props and state in React.
