@@ -4,17 +4,20 @@ export default function EducationalExperienceSection({
   educationalExperiences,
   handleClick,
   handleChange,
+  handleRemove,
 }) {
   return (
     <>
       {educationalExperiences.map((item) => {
         return (
-          <EducationalExperience
-            key={item?.id}
-            id={item?.id}
-            educationalExperience={item}
-            handleChange={handleChange}
-          ></EducationalExperience>
+          <div key={item?.id}>
+            <EducationalExperience
+              id={item?.id}
+              educationalExperience={item}
+              handleChange={handleChange}
+            ></EducationalExperience>
+            <button onClick={() => handleRemove(item.id)}>Remove</button>
+          </div>
         );
       })}
 

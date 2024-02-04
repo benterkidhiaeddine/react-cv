@@ -44,9 +44,19 @@ export default function TopLevelManager() {
     setEducationalExperiences(newEducationalExperiences);
   }
 
+  function handleRemoveEducationalExperience(id) {
+    const newEducationalExperiences = educationalExperiences.filter(
+      (item) => item.id !== id
+    );
+    setEducationalExperiences(newEducationalExperiences);
+  }
+
   return (
     <>
-      <CV generalInformation={generalInformation}></CV>
+      <CV
+        generalInformation={generalInformation}
+        educationalExperiences={educationalExperiences}
+      ></CV>
       <GeneralInformation
         generalInformation={generalInformation}
         handleChange={handleGeneralInformationChange}
@@ -55,6 +65,7 @@ export default function TopLevelManager() {
         educationalExperiences={educationalExperiences}
         handleClick={handleClickSchool}
         handleChange={handleEducationalExperiencesChange}
+        handleRemove={handleRemoveEducationalExperience}
       ></EducationalExperienceSection>
     </>
   );
