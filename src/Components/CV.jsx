@@ -4,6 +4,7 @@ export default function CV({ generalInformation }) {
       <h1>Full Name: {generalInformation?.fullName}</h1>
       <p>Email : {generalInformation?.email}</p>
       <p>Phone Number : {generalInformation?.phoneNumber}</p>
+      <p>Adress : {generalInformation?.address}</p>
     </>
   );
 }

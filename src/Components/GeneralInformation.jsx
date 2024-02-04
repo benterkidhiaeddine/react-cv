@@ -27,6 +27,14 @@ export default function GeneralInformation({
         value={generalInformation?.phoneNumber}
         onChange={(e) => handleChange(e, "phoneNumber")}
       ></input>
+
+      <label htmlFor="adress">Adress</label>
+      <input
+        id="address"
+        type="text"
+        value={generalInformation?.address}
+        onChange={(e) => handleChange(e, "address")}
+      ></input>
     </>
   );
 }
